@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+   <head></head>
+   <body>    
+      <h3>Users (<a href="/user">Add New</a>) (<a href="/users">Remove User</a>)</h3>
+      
+      <table>
+         <thead>
+            <tr>
+               <th>First Name</th>
+               <th>Last Name</th>
+               <th>Email</th>
+            </tr>
+         </thead>
+         
+         <tbody>
+            {% for user in users %}
+               <tr>
+                  <td>{{ user.first_name }}</td>
+                  <td>{{ user.last_name }}</td>
+                  <td>{{ user.email }}</td>
+               </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+      
+   </body>
+</html>

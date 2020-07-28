@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peach</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="icon" href="peach-icon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body {
+    font-family: "Lato", sans-serif;
+}
+
+
+
+.main-head{
+    height: 150px;
+    background: #FFF;
+   
+}
+
+.sidenav {
+    height: 100%;
+    background-image: url(https://assets.lnwy.co/app/uploads/2018/01/24142138/lnwy-playlist-january-cover-600x600.jpg);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.form-control {
+    color: black;
+    background: transparent;
+    border: transparent;
+    border-radius: 0;
+    border-bottom: 2px solid black;
+    outline: none !important;
+}
+
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+    .logo {
+        width: 150px;
+        /* margin-left: 30px; */
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 50%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+    .logo {
+        width: 150px;
+        /* margin-left: 50px; */
+    }
+}
+
+
+.login-main-text{
+    /* margin-top: 100px; */
+    /* padding: 60px; */
+    /* color: #fff; */
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: #fc5c74 !important;
+    color: #fff;
+    outline: none !important;
+}
+
+.btn-secondary {
+    background-color: #fc6f5c !important;
+    color: #fff;
+    outline: none !important;
+    border: transparent;
+}
+.login-main-text{
+    padding: 165px;
+    /* margin-top: 35%; */
+    /* padding: 60px; */
+    /* color: #fff; */
+}
+
+/* .logo {
+    width: 150px;
+    margin-left: 100px;
+} */
+
+@media (min-width: 361px) and (max-width: 767px) {
+    .logo {
+        /* margin-top: 100px !important; */
+    }
+    .login-main-text{
+        padding: 100px ;
+        /* padding-top: -20px; */
+        /* margin-top: 35%; */
+        /* padding: 60px; */
+        /* color: #fff; */
+    }
+    
+
+}
+@media (max-width: 360px) {
+    /* .logo {
+        width: 150px;
+        margin-left: 25px;
+    } */
+    .login-main-text{
+        padding: 80px;
+        /* margin-top: 35%; */
+        /* padding: 60px; */
+        /* color: #fff; */
+    }
+
+}
+@media (min-width: 768px) and (max-width: 841px) {
+    .login-main-text{
+        padding: 80px;
+        /* margin-top: 35%; */
+        /* padding: 60px; */
+        /* color: #fff; */
+    }
+
+}
+@media (min-width: 842px) and (max-width: 1025px) {
+    .login-main-text{
+        padding: 80px;
+        /* margin-top: 35%; */
+        /* padding: 60px; */
+        /* color: #fff; */
+    }
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="sidenav">
+        <div class="login-main-text text-center">
+            <a href="application.html"><img src="black-peach.png" alt="" class="logo text-center"></a>
+        </div>
+     </div>
+     <div class="main">
+        <div class="col-md-6 col-sm-12">
+           <div class="login-form">
+              <form method="POST" action="/user">
+                 <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" name="first_name">
+                 </div>
+                 <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" name="last_name">
+                 </div>
+                 <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control" name="email">
+                 </div>
+                 <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" name="password">
+                 </div>
+                 <button type="submit" class="btn btn-black">Login</button>
+                 <!-- <button type="submit" class="btn btn-secondary">Register</button> -->
+              </form>
+           </div>
+        </div>
+     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <script src="js/app.js"></script>
+    <script src="js/head.js"></script>
+    <script src="js/slides.js"></script>
+</body>
+
+</html>
